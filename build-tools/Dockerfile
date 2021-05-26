@@ -1,7 +1,8 @@
 FROM ubuntu:20.04
 
-# Update apt cache
+# Update apt cache and update to latest
 RUN apt-get update
+RUN apt-get upgrade
 
 # Install WebRTC base dependencies
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
