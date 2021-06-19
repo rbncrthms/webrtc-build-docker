@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:groovy-20210614
 
 # Update apt cache and update to latest
 RUN apt-get update
